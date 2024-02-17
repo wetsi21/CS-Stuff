@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookShop</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    /* Add your CSS styles here */
+  </style>
+</head>
+<body>
+  <header>
+    <h1>BookShop CRM</h1>
+    <img src="stack-of-books.jpg" alt="Company Banner">
+    <nav>
+      <ul>
+      <li><a href="index.html">Contacts</a></li>
+        <li><a href="about.html">Orders</a></li>
+        <li><a href="services.html">Calender</a></li>
+        <li><a href="contact.html">Task</a></li>
+        <li><a href="Complementary Copies.html">Complementary Copies</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="add-contact">
+      <h2>Add Contact</h2>
+      <form action="process.php" method="get">
+        <table>
+          <tr>
+            <td><label for="name">Name:</label></td>
+            <td><input type="text" id="name" name="name" required autofocus maxlength="32"></td>
+          </tr>
+          <tr>
+            <td><label for="City">City:</label></td>
+            <td><input type="text" id="City" name="City" required maxlength="32"></td>
+          </tr>
+          <tr>
+            <td><label for="Province">Province:</label></td>
+            <td><input type="text" id="Province" name="Province" required autofocus maxlength="32"></td>
+          </tr>
+          <tr>
+            <td><label for="country">Country:</label></td>
+            <td>
+              <select id="country" name="country">
+                <option value="SA">South Africa (SA)</option>
+                <option value="ZM">Zambia (ZM)</option>
+                <option value="ZW">Zimbabwe (ZW)</option>
+                <option value="DRC">Democratic Republic of Congo (DRC)</option>
+                <option value="KE">Kenya (KE)</option>
+                <option value="EGY">Egypt (EGY)</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="postal">Postal:</label></td>
+            <td><input type="text" id="postal" name="postal" required maxlength="4" pattern="\d{4}"></td>
+          </tr>
+          <tr>
+            <td><label for="phone">Phone:</label></td>
+            <td><input type="tel" id="phone" name="phone" required pattern="\d{3}-\d{7}" placeholder="123-4567890"></td>
+          </tr>
+          <tr>
+            <td><label for="email">eMail:</label></td>
+            <td><input type="email" id="email" name="email" required maxlength="32"></td>
+          </tr>
+        </table>
+        <button type="submit">Submit</button>
+      </form>
+      <br>
+    </section>
+  </main>
+
+  <footer>
+    <table>
+      <tbody>
+        <tr>
+          <td> <a href="home.html">Home|</a></td>
+          <td> <a href="home.html">Catalog|</a></td>
+          <td> <a href="home.html">Inventory</a></td>
+        </tr>
+      </tbody>
+
+    </table>
+    <p>Copyright &copy; 2023 - BookShop CRM</p>
+  </footer>
+</body>
+</html>
